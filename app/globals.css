@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'satoshi';
+  src: url('/fonts/Satoshi-Regular.otf') format('opentype'),
+       url('/fonts/Satoshi-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --nav-height-desk: 100px;
+  --nav-height-mob: 80px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: white;
+  font-family: 'satoshi';
+}
+
+.font-satoshi {
+  font-family: satoshi;
+}
+
+
+/* container | for reponsivenes */
+@media (min-width: 300px) {
+  .container {
+    max-width: 100%;
+    margin-inline: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 984px) and (max-width: 1070px) {
+  .container {
+    margin-inline: 35px !important;
+  }
+}
+
+@media (min-width: 984px) {
+  .container {
+    max-width: 984px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1160px) and (max-width: 1200px) {
+  .container {
+    margin-inline: 30px !important;
+  }
+}
+
+@media (min-width: 1160px) {
+  .container {
+    max-width: 1440px;
+    padding-inline : 25px;
+    margin-inline: auto;
+  }
+}
+
+p{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.32px;
+}
+
+
