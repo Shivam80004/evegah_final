@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import bg from '@/public/images/info-bg.png'
-import Button from '../comman/Button'
+import Button from '../comman/Button1'
 
 function Information() {
     return (

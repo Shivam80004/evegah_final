@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '@/public/images/logo-svg.svg'
 import Image from 'next/image'
-import Button from '../comman/Button'
+import Button from '../comman/Button1'
 import arrow from '@/public/images/arrow.svg'
 
 function achivement() {

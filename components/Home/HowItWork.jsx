@@ -4,7 +4,7 @@ import applestore from '@/public/images/appstore-icon.png'
 import p1 from '@/public/images/download-p1.png'
 import Image from 'next/image'
 import SwiperHowItWork from './SwiperHowItWork'
-import Button from '../Comman/Button'
+import Button from '../comman/Button1'
 
 const data = [
         {

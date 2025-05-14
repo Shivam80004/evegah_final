@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../comman/Button'
+import Button from '../comman/Button1'
 import ebike from '@/public/images/ebike.png'
 import arrow from '@/public/images/arrow.svg'
 import Image from 'next/image'
