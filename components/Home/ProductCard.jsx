@@ -3,6 +3,7 @@ import Button from '../comman/Button1'
 import ebike from '@/public/images/ebike.png'
 import arrow from '@/public/images/arrow.svg'
 import Image from 'next/image'
+import TextAnimation from '../animation/TextAnimation'
 
 function ProductCard() {
   return (
@@ -14,7 +15,9 @@ function ProductCard() {
           textColor="#7000DD"
           text="Our Vehicles"
         />
+      <TextAnimation animationOnScrool="false">
         <div className='text-[3.25rem] font-[500] w-[55%]'>Electrify Your Commute with <span className='text-[#0000006B]'>EVegah’s Shared E-Ride Revolution</span></div>
+      </TextAnimation>
       </div>
 
       {/* Product Cards */}

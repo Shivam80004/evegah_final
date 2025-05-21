@@ -1,14 +1,17 @@
+"use client"
 import React from 'react'
 import logo from '@/public/images/logo-svg.svg'
 import Image from 'next/image'
-import Button from '../comman/Button1'
+import AnimatedButton from '../animation/AnimatedButton'
 import arrow from '@/public/images/arrow.svg'
+import FourBox from './FourBox'
+import FadeUp from '../animation/FadeUp'
 
-function achivement() {
+function Achievement() {
     return (
         <div className='container mx-auto py-[100px]'>
             {/* Upper Part */}
-            <div className='flex flex-col gap-[20px] justify-center items-center max-w-[800px] mx-auto'>
+            <FadeUp className='flex flex-col gap-[20px] justify-center items-center max-w-[800px] mx-auto'>
                 <h2 className='text-[52px] not-italic font-bold leading-[130%] tracking-[1.56px] text-center'>
                     <div className='inline-block rounded-[14px] bg-[#CDFF64] h-[75px] w-[245px] m-[-23px] pt-[10px]'>
                         <Image src={logo} alt="logo" width={100} height={100} className='h-[85%] w-full fit-cover' />
@@ -23,9 +26,10 @@ function achivement() {
                 <div className='flex flex-row gap-[20px] justify-center items-center'>
                     <div className='flex flex-col gap-[20px] justify-center items-center'>
                         <h3 className='text-[20px] not-italic font-medium leading-[130%] tracking-[1.56px] text-center flex flex-row'>
-                            <Button
+                            <AnimatedButton
                                 borderColor="#000"
                                 textColor="#000"
+                                flairColor="#633bc6"
                                 text="Explore More"
                             />
                             <div className='rounded-full border border-[#000] h-[62px] w-[62px] flex items-center justify-center'>
@@ -36,59 +40,12 @@ function achivement() {
                         </h3>
                     </div>
                 </div>
-            </div>
+            </FadeUp>
 
             {/* Lower Part */}
-
-            <div className='flex flex-row gap-[1vw] justify-center items-center container mx-auto'>
-
-                <div className='flex flex-row gap-[1.2vw] justify-center items-center mt-[-8vw]'>
-                    <div className='h-[18vw] min-h-[8rem] w-[20.4vw] min-w-[12rem] bg-[#000] rounded-[1.6vw] flex flex-col justify-center items-center'>
-                        <h1 className='text-[5.6vw] min-text-[2.4rem] font-bold leading-[130%] tracking-[0.08em] text-center text-[#CDFF64]'>
-                            100+
-                        </h1>
-                        <p className='text-[1.2vw] min-text-[0.8rem] font-medium leading-[130%] tracking-[0.08em] text-center text-[#fff]'>
-                            Cities
-                        </p>
-                    </div>
-                </div>
-
-                <div className='flex flex-row gap-[1.2vw] justify-center items-center mt-[12vw]'>
-                    <div className='h-[18vw] min-h-[8rem] w-[20.4vw] min-w-[12rem] bg-[#CDFF64] rounded-[1.6vw] flex flex-col justify-center items-center'>
-                        <h1 className='text-[5.6vw] min-text-[2.4rem] font-bold leading-[130%] tracking-[0.08em] text-center text-black'>
-                            100+
-                        </h1>
-                        <p className='text-[1.2vw] min-text-[0.8rem] font-medium leading-[130%] tracking-[0.08em] text-center text-black'>
-                            Cities
-                        </p>
-                    </div>
-                </div>
-
-                <div className='flex flex-row gap-[1.2vw] justify-center items-center mt-[5.6vw]'>
-                    <div className='h-[18vw] min-h-[8rem] w-[20.4vw] min-w-[12rem] bg-[#EBEBEB] rounded-[1.6vw] flex flex-col justify-center items-center'>
-                        <h1 className='text-[5.6vw] min-text-[2.4rem] font-bold leading-[130%] tracking-[0.08em] text-center text-black'>
-                            100+
-                        </h1>
-                        <p className='text-[1.2vw] min-text-[0.8rem] font-medium leading-[130%] tracking-[0.08em] text-center text-black'>
-                            Cities
-                        </p>
-                    </div>
-                </div>
-
-                <div className='flex flex-row gap-[1.2vw] justify-center items-center mt-[-17.6vw]'>
-                    <div className='h-[18vw] min-h-[8rem] w-[20.4vw] min-w-[12rem] bg-[#DDDAFA] rounded-[1.6vw] flex flex-col justify-center items-center'>
-                        <h1 className='text-[5.6vw] min-text-[2.4rem] font-bold leading-[130%] tracking-[0.08em] text-center text-black'>
-                            100+
-                        </h1>
-                        <p className='text-[1.2vw] min-text-[0.8rem] font-medium leading-[130%] tracking-[0.08em] text-center text-black'>
-                            Cities
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+            <FourBox />
         </div>
     )
 }
 
-export default achivement
+export default Achievement

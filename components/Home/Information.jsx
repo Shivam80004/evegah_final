@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import bg from '@/public/images/info-bg.png'
 import Button from '../comman/Button1'
+import ImgParallex from '../animation/ImgParallex'
 
 function Information() {
     return (
@@ -40,7 +41,7 @@ function Information() {
                 </div>
 
             </div>
-
+            
         </div>
     )
 }

@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header1 />
-      <main>
+      <main className="relative bg-white z-0 mb-[40vh] rounded-b-4xl">
         {children}
       </main>
       <Footer />
